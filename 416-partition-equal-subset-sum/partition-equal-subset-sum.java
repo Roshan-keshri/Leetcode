@@ -20,7 +20,7 @@ class Solution {
         }
         boolean nottake=checknum(nums, dp, n-1,k);
         boolean take = false;
-        if(nums[n]<k){
+        if(nums[n]<=k){
             take=checknum(nums, dp, n-1, k-nums[n]);
         }
         boolean ans = take || nottake;
